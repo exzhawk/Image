@@ -49,6 +49,8 @@ void *WEBP_decode(JNIEnv *env, PatchHeadInputStream *patch_head_input_stream, bo
     }
 
     result = WebPDecodeRGBA(data,data_size,&webp->width,&webp->height);
+    close_patch_head_input_stream(env, patch_head_input_stream);
+    destroy_patch_head_input_stream(env, &patch_head_input_stream);
     LOGE(MSG("decode done height %d width %d"), webp->height,webp->width);
     webp->buffer = result;
     // free(result);

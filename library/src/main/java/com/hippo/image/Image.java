@@ -18,7 +18,7 @@ package com.hippo.image;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import com.getkeepsafe.relinker.ReLinker;
 import java.io.BufferedInputStream;
 import java.io.InputStream;

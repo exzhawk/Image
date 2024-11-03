@@ -22,6 +22,7 @@
 #if defined(STREAM_SUPPORT_INPUT) && defined(STREAM_SUPPORT_INPUT_PATCH_HEAD)
 
 #include <stdlib.h>
+#include <string.h>
 
 #include "patch_head_input_stream.h"
 #include "../log.h"

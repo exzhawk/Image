@@ -547,6 +547,7 @@ void recycle(JNIEnv *env, void *image, int format) {
 #ifdef IMAGE_SUPPORT_WEBP
         case IMAGE_FORMAT_WEBP:
             WEBP_recycle((WEBP *) image);
+            break;
 #endif
         default:
             LOGE(MSG("Can't detect format %d"), format);
