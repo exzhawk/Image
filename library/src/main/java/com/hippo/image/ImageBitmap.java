@@ -128,6 +128,10 @@ public final class ImageBitmap implements Animatable, Runnable {
         }
     }
 
+    public Bitmap getBitmap(){
+        return this.mBitmap;
+    }
+
     /**
      * Obtain the image bitmap
      *
